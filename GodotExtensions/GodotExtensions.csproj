@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NuspecFile>"GodotExtensions.nuspec"</NuspecFile>
+    <ProjectGuid>{D55FF9B9-40DC-4144-8CFA-E39C83C3E246}</ProjectGuid>
+  </PropertyGroup>
+  <Target Name="Nuget">
+    <Exec Command="..\tools\nuget.exe pack GodotExtensions.nuspec -OutputDirectory ..\nuget" />
+  </Target>
+  <ItemGroup>
+    <None Include="GodotExtensions.nuspec" />
+    <None Include="Extensions.cs" />
+  </ItemGroup>
+</Project>
