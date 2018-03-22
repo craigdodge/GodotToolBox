@@ -2,6 +2,9 @@
 /deps
 /nuget
 
+# Godot .mono directory
+.mono/
+
 # User-specific files
 *.suo
 *.user

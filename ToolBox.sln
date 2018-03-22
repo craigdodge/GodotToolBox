@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodotExtensions", "GodotExtensions\GodotExtensions.csproj", "{D55FF9B9-40DC-4144-8CFA-E39C83C3E246}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog", "NLog\NLog.csproj", "{E756DC84-6CA5-40A6-BAE4-C0CE5D6FA240}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,9 @@ Global
 		{D55FF9B9-40DC-4144-8CFA-E39C83C3E246}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{D55FF9B9-40DC-4144-8CFA-E39C83C3E246}.Release|Any CPU.ActiveCfg = Debug|x86
 		{D55FF9B9-40DC-4144-8CFA-E39C83C3E246}.Release|Any CPU.Build.0 = Debug|x86
+		{E756DC84-6CA5-40A6-BAE4-C0CE5D6FA240}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E756DC84-6CA5-40A6-BAE4-C0CE5D6FA240}.Release|Any CPU.ActiveCfg = Debug|x86
+		{E756DC84-6CA5-40A6-BAE4-C0CE5D6FA240}.Release|Any CPU.Build.0 = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

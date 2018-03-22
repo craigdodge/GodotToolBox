@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://CSharpTimer.cs" type="Script" id=1]
+[ext_resource path="res://GDScriptTimer.gd" type="Script" id=2]
+[ext_resource path="res://Toolbox/Scenes/Log.tscn" type="PackedScene" id=3]
+
+[node name="Example" type="Node" index="0"]
+
+[node name="CSharpTimer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = true
+script = ExtResource( 1 )
+
+[node name="GDScriptTimer" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 1.5
+one_shot = false
+autostart = true
+script = ExtResource( 2 )
+
+[node name="Log" parent="." index="2" instance=ExtResource( 3 )]
+
+[connection signal="timeout" from="CSharpTimer" to="CSharpTimer" method="onCSharpTimerTimout"]
+
+[connection signal="timeout" from="GDScriptTimer" to="GDScriptTimer" method="_on_GDScriptTimer_timeout"]
+
+
