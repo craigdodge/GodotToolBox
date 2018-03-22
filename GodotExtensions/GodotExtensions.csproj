@@ -4,6 +4,7 @@
   <PropertyGroup>
     <NoBuild>true</NoBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <OutputPath>bin\$(Configuration)</OutputPath>
     <NuspecFile>"GodotExtensions.nuspec"</NuspecFile>
     <ProjectGuid>{D55FF9B9-40DC-4144-8CFA-E39C83C3E246}</ProjectGuid>
   </PropertyGroup>
